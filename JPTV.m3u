@@ -1,15 +1,7 @@
 #EXTM3U url-tvg="https://epg.utako.moe/jp.xml,https://animenosekai.github.io/japanterebi-xmltv/guide.xml" tvg-shift=0 m3uautoload=1
 
-#EXTINF:-1 group-title="Information" tvg-logo="https://cdn-icons-png.flaticon.com/512/0/49.png",Official page: https://utako.moe
-http://nl.utako.moe:8000/radio
-#EXTINF:-1 group-title="Information" tvg-logo="https://i.imgur.com/2OINFaA.png",We need donations to maintain the server!
-http://nl.utako.moe:8000/radio
-#EXTINF:-1 group-title="Information" tvg-logo="https://i.imgur.com/2OINFaA.png",For Primehome server you need cheat code! Join our TG for more infomation
-http://nl.utako.moe:8000/radio
-#EXTINF:-1 group-title="Information" tvg-logo="https://i.imgur.com/vFOBppE.png",Donate: https://paypal.me/Tieptran1970
-http://nl.utako.moe:8000/radio
-#EXTINF:-1 group-title="Information" tvg-logo="https://cdn-icons-png.flaticon.com/512/0/49.png", Please refrain from re-sharing those URLs! Read our gitflic repo for details.
-http://nl.utako.moe:8000/radio
+#EXTINF:-1 group-title="Information" tvg-logo="https://cdn-icons-png.flaticon.com/512/0/49.png",By Ryo Saeba
+https://quincy.torontocast.com:2020/;?type=http&nocache=1759329369
 
 #EXTINF:-1 group-title="Tokyo" tvg-id="nhk_g_tokyo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6f/NHK%E7%B7%8F%E5%90%88%E3%83%AD%E3%82%B42020-.png",NHK G HD (Primehome)
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd01
