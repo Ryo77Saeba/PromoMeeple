@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://github.com/karenda-jp/etc/raw/refs/heads/main/guides.xml,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml.xz" tvg-shift=0 m3uautoload=1
+#EXTM3U url-tvg="https://github.com/karenda-jp/etc/raw/refs/heads/main/guides.xml,https://github.com/LITUATUI/M3UPT/raw/main/EPG/epg-m3upt.xml" tvg-shift=0 m3uautoload=1
 
 #EXTINF:-1 group-title="Information" tvg-logo="https://cdn-icons-png.flaticon.com/512/0/49.png",By Ryo Saeba
 https://quincy.torontocast.com:2020/;?type=http&nocache=1759329369
@@ -138,6 +138,8 @@ http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs16
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs15
 #EXTINF:-1 group-title="CS" tvg-id="TBS-NEWS_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-152-400x400.png?", TBS News (Primehome)
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs11
+
+
 
 
 #EXTINF:-1 group-title="Portugal" tvg-id="RTP1.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP1.png",RTP 1
