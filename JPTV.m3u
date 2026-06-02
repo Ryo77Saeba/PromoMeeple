@@ -4,140 +4,140 @@
 https://quincy.torontocast.com:2020/;?type=http&nocache=1759329369
 
 #EXTINF:-1 group-title="Tokyo" tvg-id="NHK東京・総合_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE0-011-400x400.png?",NHK G (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd01
+http://akariko.netgenx.site/stream/jp/nhk_g/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Tokyo" tvg-id="NHK東京・教育_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE1-021-400x400.png?",NHK E (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd02
+http://akariko.netgenx.site/stream/jp/nhk_e/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Tokyo" tvg-id="日本テレビ_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE2-041-400x400.png?",NTV (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd03
+http://akariko.netgenx.site/stream/jp/ntv/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Tokyo" tvg-id="TBS_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE3-061-400x400.png?",TBS (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd04
+http://akariko.netgenx.site/stream/jp/tbs/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Tokyo" tvg-id="フジテレビ_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE4-081-400x400.png?",Fuji TV (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd05
+http://akariko.netgenx.site/stream/jp/fuji_tv/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Tokyo" tvg-id="テレビ朝日_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE5-051-400x400.png?",TV Asahi (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd06
+http://akariko.netgenx.site/stream/jp/tv_asahi/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Tokyo" tvg-id="テレ東_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FE6-071-400x400.png?",TV Tokyo (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd07
+http://akariko.netgenx.site/stream/jp/tv_tokyo/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Tokyo" tvg-id="TOKYO・MX_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7E87-091-400x400.png?",TOKYO MX1 (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd08
+http://akariko.netgenx.site/stream/jp/tokyo_mx1/stream-output.m3u8?mode=hls
 
 #EXTINF:-1 group-title="Kansai" tvg-id="NHK大阪・総合_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7D70-011-400x400.png?",NHK G Osaka (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx06
+http://akariko.netgenx.site/stream/jp/nhk_g_osaka/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Kansai" tvg-id="rch_115" tvg-logo="https://channel.rakuten.co.jp/service/img/logo/chlogo-with-number/106_mbs.png?",MBS (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx01
+http://akariko.netgenx.site/stream/jp/mbs/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Kansai" tvg-id="ABCテレビ_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FD3-061-400x400.png?",ABC (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx02
+http://akariko.netgenx.site/stream/jp/abc/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Kansai" tvg-id="関西テレビ_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FD4-081-400x400.png?",Kansai TV (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx03
+http://akariko.netgenx.site/stream/jp/kansai_tv/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Kansai" tvg-id="読売テレビ_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7FD5-101-400x400.png?",ytv (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx04
+http://akariko.netgenx.site/stream/jp/ytv/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Kansai" tvg-id="テレビ大阪_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7D76-071-400x400.png?",TV Osaka (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx05
+http://akariko.netgenx.site/stream/jp/tv_osaka/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Kansai" tvg-id="サンテレビ_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7D56-031-400x400.png?",SUN (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx07
+http://akariko.netgenx.site/stream/jp/sun/stream-output.m3u8?mode=hls
 
 #EXTINF:-1 group-title="BS" tvg-id="NHK・BS_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-101-400x400.png?",NHK BS (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs11
+http://akariko.netgenx.site/stream/jp/nhk_bs/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="BS日テレ_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-141-400x400.png?",BS NTV (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs02
+http://akariko.netgenx.site/stream/jp/bs_ntv/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="BS朝日_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-151-400x400.png?",BS Asahi (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs03
+http://akariko.netgenx.site/stream/jp/bs_asahi/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="BS-TBS_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-161-400x400.png?",BS TBS (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs04
+http://akariko.netgenx.site/stream/jp/bs_tbs/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="BSテレ東_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-171-400x400.png?",BS TV Tokyo (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs05
+http://akariko.netgenx.site/stream/jp/bs_tv_tokyo/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="BSフジ_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-181-400x400.png?",BS Fuji (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs06
-#EXTINF:-1 group-title="BS" tvg-id="NHK・BS_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-000b-101-400x400.png?",NHK BS4K (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs01
+http://akariko.netgenx.site/stream/jp/bs_fuji/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="WOWOWプライム_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-191-400x400.png?",WOWOW Prime (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs12
+http://akariko.netgenx.site/stream/jp/wowow_prime/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="WOWOWシネマ_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-193-400x400.png?",WOWOW Cinema (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs07
+http://akariko.netgenx.site/stream/jp/wowow_cinema/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="WOWOWライブ_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-192-400x400.png?",WOWOW Live (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs20
+http://akariko.netgenx.site/stream/jp/wowow_live/stream-output.m3u8?mode=hls
+#EXTINF:-1 group-title="BS" tvg-id="WOWOWプラス_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-155-400x400.png",WOWOW Plus
+http://akariko.netgenx.site/stream/jp/wowow_plus/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="BS10_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-200-400x400.png?",BS 10 Star Channel (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs08
+http://akariko.netgenx.site/stream/jp/bs_10_premium/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="SPORTS-1_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-168-400x400.png?",J-Sport 1 (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs18
+http://akariko.netgenx.site/stream/jp/jsport_1/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="SPORTS-2_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-169-400x400.png?",J-Sport 2 (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs19
+http://akariko.netgenx.site/stream/jp/jsport_2/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="SPORTS-3_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-158-400x400.png?",J-Sport 3 (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs21
+http://akariko.netgenx.site/stream/jp/jsport_3/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="J-SPORTS-4_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65534-132-400x400.png?",J-Sport 4 (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs22
+http://akariko.netgenx.site/stream/jp/jsport_4/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="グリーンチャンネル_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-164-400x400.png?",Green Channel (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs14
+http://akariko.netgenx.site/stream/jp/green_channel/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="アニマックス_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-149-400x400.png?",Animax (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs15
+http://akariko.netgenx.site/stream/jp/animax/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="日本映画専門チャンネル_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65534-125-400x400.png?",Nihon Eiga Senmon (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs23
+http://akariko.netgenx.site/stream/jp/nihon_eiga_senmon/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="スカイA_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-147-400x400.png?",Sky A (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs01
+http://akariko.netgenx.site/stream/jp/sky_a/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="釣りビジョン_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-145-400x400.png?", Fishing Vision (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs25
+http://akariko.netgenx.site/stream/jp/fishing_vision/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="ディズニー・チャンネル_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-183-400x400.png?", Disney Channel (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs24
+http://akariko.netgenx.site/stream/jp/disney_channel/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="BS" tvg-id="J-COM-BS_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-260-400x400.png?", JCOM BS (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs31
+http://akariko.netgenx.site/stream/jp/jcom_bs/stream-output.m3u8?mode=hls
 
 #EXTINF:-1 group-title="CS" tvg-id="時代劇専門チャンネル_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-159-400x400.png?", Jidaigeki Senmon (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs04
+http://akariko.netgenx.site/stream/jp/jidaigeki_senmon/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="東映チャンネル_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-173-400x400.png?", Toei Channel (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs27
+http://akariko.netgenx.site/stream/jp/toei_channel/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="衛星劇場_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-127-400x400.png?", Eisei Gekijo (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs22
+http://akariko.netgenx.site/stream/jp/eisei_gekijo/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="ファミリー劇場_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-157-400x400.png?", Family Gekijyo (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs20
+http://akariko.netgenx.site/stream/jp/family_gekijyo/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="ムービープラス_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65534-122-400x400.png?", Movie Plus (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs14
+http://akariko.netgenx.site/stream/jp/movie_plus/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="ホームドラマチャンネル_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-141-400x400.png?", Home Drama Channel (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs05
+http://akariko.netgenx.site/stream/jp/home_drama_channel/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="旅チャンネル_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-143-400x400.png?", Tabi Channel (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs12
+http://akariko.netgenx.site/stream/jp/tabi_channel/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="フジテレビNEXT_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-137-400x400.png?", Fuji TV Next (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs26
+http://akariko.netgenx.site/stream/jp/fuji_tv_next/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="GAORA-SPORTS_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-146-400x400.png?", GAORA SPORTS (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs17
+http://akariko.netgenx.site/stream/jp/gaora_sports/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="ゴルフネットワーク_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-167-400x400.png?", Golf Network (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs03
+http://akariko.netgenx.site/stream/jp/golf_network/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="日テレジータス_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-166-400x400.png?", Nittele G+ (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs02
+http://akariko.netgenx.site/stream/jp/nittele_g+/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="MONDOTV_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-160-400x400.png?", Mondo TV (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs21
+http://akariko.netgenx.site/stream/jp/mondo_tv/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="チャンネル銀河_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65534-135-400x400.png?", Channel Ginga (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs29
+http://akariko.netgenx.site/stream/jp/channel_ginga/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="スペースシャワーTV_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-156-400x400.png?", Space Shower TV (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs26
+http://akariko.netgenx.site/stream/jp/space_shower_tv/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="ミュージック・ジャパンTV_jp" tvg-logo="https://api2.bangumi.org/repix/monomedia/logo/csp/logo-000A-639-75x75.png?", Music Japan TV (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs06
+http://akariko.netgenx.site/stream/jp/music_japan_tv/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="歌謡ポップスチャンネル_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-175-400x400.png?", Kayo Pops (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs13
+http://akariko.netgenx.site/stream/jp/kayo_pops/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="MTV_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-150-400x400.png?", MTV (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs18
+http://akariko.netgenx.site/stream/jp/mtv/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="LaLa-TV_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65534-123-400x400.png?", LaLa TV (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs19
+http://akariko.netgenx.site/stream/jp/lala_tv/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="タカラヅカ・スカイ・ステージ_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-154-400x400.png?", Takarazuka Sky Stage (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs28
+http://akariko.netgenx.site/stream/jp/takarazuka_sky_stage/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="キッズステーション_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-163-400x400.png?", Kids Station TV (Primehome)
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs07
 #EXTINF:-1 group-title="CS" tvg-id="カートゥーン-ネットワーク_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-171-400x400.png?", Cartoon Network (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs25
+http://akariko.netgenx.site/stream/jp/cartoon_network/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="ナショナル-ジオグラフィック_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-142-400x400.png?", National Geographic Japan (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs10
+http://akariko.netgenx.site/stream/jp/national_geographic_japan/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="ディズニージュニア_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-130-400x400.png?", Disney Junior (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs23
+http://akariko.netgenx.site/stream/jp/disney_junior/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="ディスカバリーチャンネル_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65534-121-400x400.png?", Discovery Channel (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs08
+http://akariko.netgenx.site/stream/jp/discovery_channel/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="アニマルプラネット_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-186-400x400.png?", Animal Planet (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs24
+http://akariko.netgenx.site/stream/jp/animal_planet/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="ヒストリーチャンネル_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65534-134-400x400.png?", History (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs09
+http://akariko.netgenx.site/stream/jp/history/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="CNNj_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-180-400x400.png?", CNNj (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs16
+http://akariko.netgenx.site/stream/jp/cnnj/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="BBCニュース_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65534-257-400x400.png?", BBC News (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs15
+http://akariko.netgenx.site/stream/jp/bbc_news/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="CS" tvg-id="TBS-NEWS_jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-152-400x400.png?", TBS News (Primehome)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs11
+http://akariko.netgenx.site/stream/jp/tbs_news/stream-output.m3u8?mode=hls
 
 
 #EXTINF:-1 group-title="Portugal" tvg-id="RTP1.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RTP1.png",RTP 1
