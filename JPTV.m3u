@@ -171,13 +171,6 @@ https://haru.charandom.blog/stream/jp/music_on_tv/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="Music" tvg-id="CH.642" tvg-name="Space Shower TV" tvg-logo="https://commons.wikimedia.org/w/thumb.php?f=SPACE_SHOWER_TV.jpg&w=200",Space Shower TV
 https://naori-test.netgenx.site/pxx.php?shk_cid=bs26#.m3u8
 
-# NSFW
-
-#EXTINF:-1 group-title="NSFW" tvg-id="rch_41" tvg-name="Pigoo" tvg-logo="https://jp-epg-26f0ce.gitlab.io/logos/pigoo.png",Pigoo
-https://haru.charandom.blog/stream/jp/pigoo_nsfw/stream-output.m3u8?mode=hls
-#EXTINF:-1 group-title="NSFW" tvg-id="V-パラダイス_jp" tvg-name="V Paradise" tvg-logo="https://www.hikaritv.net/resources/hikari/pc/images/ch_logo/ch480/292.png",V Paradise
-https://haru.charandom.blog/stream/jp/v_paradise_nsfw/stream-output.m3u8?mode=hls
-
 # News/Business
 
 #EXTINF:-1 group-title="News/Business" tvg-id="BBCニュース_jp" tvg-name="BBC News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/BBC_News_2019.svg/250px-BBC_News_2019.svg.png",BBC News
