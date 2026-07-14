@@ -1,5 +1,5 @@
 import subprocess
-import re
+import os  # <-- AJOUT ICI
 
 # Liste de vos chaînes YouTube Live
 # Format : ("Nom de la chaîne", "URL du live YouTube")
