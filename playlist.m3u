@@ -1,1 +1,3 @@
 #EXTM3U
+#EXTINF:-1 group-title="YouTube Live",Tokyo Shinjuku Kabukicho Live
+https://www.youtube.com/api/manifest/hls_variant/id/DjdUEyjx8GM/source/yt_live_broadcast/m3u8
