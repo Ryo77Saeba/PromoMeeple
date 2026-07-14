@@ -222,24 +222,7 @@ https://naori-test.netgenx.site/pxx.php?shk_cid=cs01
 #EXTINF:-1 group-title="Sports" tvg-id="CH.580" tvg-name="Sport Live Plus" tvg-logo="https://jp-epg-26f0ce.gitlab.io/logos/sport_live_plus.png",Sport Live Plus
 https://haru.charandom.blog/stream/jp/sport_live_plus/stream-output.m3u8?mode=hls
 
-# Live Cams in Japan
 
-#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Tokyo - Shinjuku Kabukicho
-https://www.youtube.com/channel/UCBFDJXGCOdMjVtg2AnReoXA/live
-#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Tokyo - Kabukicho
-https://www.youtube.com/watch?v=gFRtAAmiFbE&source_ve_path=MTc4NDI0
-#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Mont Fuji
-https://www.youtube.com/watch?v=YQ4wbAl_7zo
-#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Tokyo - Shibuya Scramble Crossing
-https://www.youtube.com/watch?v=8H3nRCFVR6Y
-#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Lac Kawaguchiko - Mont Fuji
-https://www.youtube.com/watch?v=bdUbACCWmoY
-#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Tokyo - Gare de Shinjuku
-https://www.youtube.com/watch?v=Zhmmh7l6KEw
-#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Fujiyoshida - Parc Arakurayama Sengen
-https://www.youtube.com/watch?v=cBHUv43MT6M
-#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Tokyo - Asakusa
-https://www.youtube.com/watch?v=MwcMURMzJ7A
 
 # === PORTUGAL ===
 
