@@ -5,7 +5,7 @@ import subprocess
 
 # Astuce : On peut aussi utiliser l'URL /embed/ de la vidéo si l'URL /live est bloquée
 CHANNELS = [
-    ("Tokyo Shinjuku Kabukicho Live", "https://www.youtube.com/embed/DjdUEyjx8GM?si=_aUfUbed5WgY_Rug")
+    ("Tokyo Shinjuku Kabukicho Live", "https://www.youtube.com/watch?v=DjdUEyjx8GM")
 
 ]
 
