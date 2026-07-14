@@ -87,7 +87,7 @@ def generate_m3u():
         print(f"\nTraitement : {name}...")
         stream_url = get_live_m3u8(url)
         if stream_url:
-            content += f'#EXTINF:-1 group-title="YouTube Live",{name}\n'
+            content += f'#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",{name}\n'
             content += f'{stream_url}\n'
         else:
             print(f"❌ Échec / Pas de live actif pour {name}")
