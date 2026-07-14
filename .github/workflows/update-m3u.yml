@@ -21,7 +21,6 @@ jobs:
         with:
           python-version: '3.x'
 
-      # Installation de Deno (moteur JS natif recommandé par yt-dlp)
       - name: Configuration de Deno
         uses: denoland/setup-deno@v2
         with:
@@ -32,8 +31,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install --upgrade yt-dlp
 
+      # Création du fichier cookies à partir du secret GitHub
+      - name: Création du fichier cookies
+        run: |
+          echo "${{ secrets.YOUTUBE_COOKIES }}" > cookies.txt
+
       - name: Exécution du script de mise à jour
         run: python update_playlist.py
+
+      - name: Suppression du fichier cookies
+        if: always()
+        run: rm -f cookies.txt
 
       - name: Commit et Push des modifications
         run: |
