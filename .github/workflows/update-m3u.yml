@@ -21,16 +21,11 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Configuration de Node.js
-        uses: actions/setup-node@v5
-        with:
-          node-version: '24'
-
-      # Installation de yt-dlp et du plugin PO-Token Python
+      # Installation de streamlink
       - name: Installation des dépendances
         run: |
           python -m pip install --upgrade pip
-          pip install --upgrade yt-dlp yt-dlp-get-pot
+          pip install --upgrade streamlink
 
       - name: Exécution du script de mise à jour
         run: python update_playlist.py
