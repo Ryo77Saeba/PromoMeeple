@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Utiliser la v4
+      # Mise à jour vers la v5
       - name: Checkout du dépôt
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      # Utiliser la v5
+      # Mise à jour vers la v6
       - name: Configuration de Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.x'
 
