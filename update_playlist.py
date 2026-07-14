@@ -12,7 +12,7 @@ CHANNELS = [
     ("Mont Fuji Live", "https://www.youtube.com/watch?v=YQ4wbAl_7zo"),
     ("Fujikawaguchiko - Mont Fuji", "https://www.youtube.com/watch?v=eU8A7QQOcso"),
     ("Shinjuku Eki Live", "https://www.youtube.com/watch?v=Zhmmh7l6KEw"),
-
+    ("Tokyo Asakusa Live", "https://www.youtube.com/watch?v=MwcMURMzJ7A")
 ]
 
 PIPED_INSTANCES = [
