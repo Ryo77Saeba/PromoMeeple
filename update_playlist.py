@@ -1,29 +1,27 @@
 import subprocess
-import os  # <-- AJOUT ICI
+import os
 
-# Liste de vos chaînes YouTube Live
-# Format : ("Nom de la chaîne", "URL du live YouTube")
+# Astuce : On peut aussi utiliser l'URL /embed/ de la vidéo si l'URL /live est bloquée
 CHANNELS = [
-    ("Tokyo Shinjuku Kabukicho Live", "https://www.youtube.com/@kabukicho-1/live"),
-    ("Kabukicho Live Channel II", "https://www.youtube.com/@kabukicho-2/live"),
-    ("Shibuya Scramble Crossing Live Camera", "https://www.youtube.com/@ANNnewsCH/live")
+    ("Tokyo Shinjuku Kabukicho Live", "https://www.youtube.com/embed/DjdUEyjx8GM?autoplay=1&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;hl=en&amp;disablekb=1&amp;cc_load_policy=0&amp;loop=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.skylinewebcams.com&amp;widgetid=1&amp;forigin=https%3A%2F%2Fwww.skylinewebcams.com%2Ffr%2Fwebcam%2Fjapan%2Fkanto%2Ftokyo%2Fshinjuku-kabukicho.html&amp;aoriginsup=1&amp;gporigin=https%3A%2F%2Fwww.skylinewebcams.com%2Fwebcam%2Fjapan.html&amp;vf=1"),
+
 ]
 
 def get_live_m3u8(youtube_url):
-    """Extrait l'URL .m3u8 en direct via yt-dlp."""
+    """Extrait l'URL .m3u8 en direct via les clients les plus permissifs."""
     try:
         cmd = ["yt-dlp"]
         
-        # Vérification et injection des cookies
+        # Injection des cookies si présents
         if os.path.exists("cookies.txt") and os.path.getsize("cookies.txt") > 0:
             print("--> Utilisation du fichier cookies.txt")
             cmd.extend(["--cookies", "cookies.txt"])
-        else:
-            print("⚠️ Attention: Fichier cookies.txt introuvable ou vide !")
 
-        # Utilisation des clients compatibles (tv, android_vr, web)
+        # Combination de clients qui contournent les restrictions Cloud/Datacenter :
+        # android_embed et ios n'exigent généralement pas de challenge JS lourd
         cmd.extend([
-            "--extractor-args", "youtube:player_client=tv,android_vr,web",
+            "--extractor-args", "youtube:player_client=android_embed,ios,android",
+            "--no-warnings",
             "-g",
             youtube_url
         ])
