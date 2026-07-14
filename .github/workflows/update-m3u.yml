@@ -26,17 +26,11 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Configuration de Deno
-        uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
-
-      # Installation de yt-dlp et du générateur de PO-Token
+      # Installation de yt-dlp et du plugin PO-Token Python
       - name: Installation des dépendances
         run: |
           python -m pip install --upgrade pip
-          pip install --upgrade yt-dlp
-          npm install -g youtube-po-token-generator
+          pip install --upgrade yt-dlp yt-dlp-get-pot
 
       - name: Exécution du script de mise à jour
         run: python update_playlist.py
@@ -44,6 +38,6 @@ jobs:
       - name: Commit et Push des modifications
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add playlist.m3u
           git diff --staged --quiet || (git commit -m "Auto-update playlist.m3u [skip ci]" && git push)
