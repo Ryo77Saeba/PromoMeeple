@@ -1,17 +1,33 @@
 #EXTM3U
 #EXTINF:-1 group-title="YouTube Live",Tokyo Shinjuku Kabukicho Live
-https://yturl.ing/hls/DjdUEyjx8GM.m3u8
+https://m3u.ch/live/DjdUEyjx8GM.m3u8
+#EXTINF:-1 group-title="YouTube Live (Miroir)",Tokyo Shinjuku Kabukicho Live (Secours)
+https://youtube-live-stream.vercel.app/api/live?id=DjdUEyjx8GM
 #EXTINF:-1 group-title="YouTube Live",Tokyo Shinjuku Kabukicho Live II
-https://yturl.ing/hls/gFRtAAmiFbE.m3u8
+https://m3u.ch/live/gFRtAAmiFbE.m3u8
+#EXTINF:-1 group-title="YouTube Live (Miroir)",Tokyo Shinjuku Kabukicho Live II (Secours)
+https://youtube-live-stream.vercel.app/api/live?id=gFRtAAmiFbE
 #EXTINF:-1 group-title="YouTube Live",Shibuya Scramble Crossing Live
-https://yturl.ing/hls/8H3nRCFVR6Y.m3u8
+https://m3u.ch/live/8H3nRCFVR6Y.m3u8
+#EXTINF:-1 group-title="YouTube Live (Miroir)",Shibuya Scramble Crossing Live (Secours)
+https://youtube-live-stream.vercel.app/api/live?id=8H3nRCFVR6Y
 #EXTINF:-1 group-title="YouTube Live",Shibuya Scramble Crossing Live II
-https://yturl.ing/hls/dfVK7ld38Ys.m3u8
+https://m3u.ch/live/dfVK7ld38Ys.m3u8
+#EXTINF:-1 group-title="YouTube Live (Miroir)",Shibuya Scramble Crossing Live II (Secours)
+https://youtube-live-stream.vercel.app/api/live?id=dfVK7ld38Ys
 #EXTINF:-1 group-title="YouTube Live",Mont Fuji Live
-https://yturl.ing/hls/YQ4wbAl_7zo.m3u8
+https://m3u.ch/live/YQ4wbAl_7zo.m3u8
+#EXTINF:-1 group-title="YouTube Live (Miroir)",Mont Fuji Live (Secours)
+https://youtube-live-stream.vercel.app/api/live?id=YQ4wbAl_7zo
 #EXTINF:-1 group-title="YouTube Live",Fujikawaguchiko - Mont Fuji
-https://yturl.ing/hls/eU8A7QQOcso.m3u8
+https://m3u.ch/live/eU8A7QQOcso.m3u8
+#EXTINF:-1 group-title="YouTube Live (Miroir)",Fujikawaguchiko - Mont Fuji (Secours)
+https://youtube-live-stream.vercel.app/api/live?id=eU8A7QQOcso
 #EXTINF:-1 group-title="YouTube Live",Shinjuku Eki Live
-https://yturl.ing/hls/Zhmmh7l6KEw.m3u8
+https://m3u.ch/live/Zhmmh7l6KEw.m3u8
+#EXTINF:-1 group-title="YouTube Live (Miroir)",Shinjuku Eki Live (Secours)
+https://youtube-live-stream.vercel.app/api/live?id=Zhmmh7l6KEw
 #EXTINF:-1 group-title="YouTube Live",Tokyo Asakusa Live
-https://yturl.ing/hls/MwcMURMzJ7A.m3u8
+https://m3u.ch/live/MwcMURMzJ7A.m3u8
+#EXTINF:-1 group-title="YouTube Live (Miroir)",Tokyo Asakusa Live (Secours)
+https://youtube-live-stream.vercel.app/api/live?id=MwcMURMzJ7A
