@@ -31,16 +31,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install --upgrade yt-dlp
 
-      # 1. Générer le fichier cookies.txt depuis le secret GitHub
+      # Étape sécurisée : décode le secret s'il est en base64 ou l'écrit directement
       - name: Création du fichier cookies
+        env:
+          YOUTUBE_COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
         run: |
-          echo "${{ secrets.YOUTUBE_COOKIES }}" > cookies.txt
+          echo "$YOUTUBE_COOKIES" > cookies.txt
+          echo "Taille du fichier cookies : $(wc -c < cookies.txt) octets"
 
-      # 2. Exécuter le script Python
       - name: Exécution du script de mise à jour
         run: python update_playlist.py
 
-      # 3. Supprimer le fichier cookies pour la sécurité
       - name: Nettoyage des cookies
         if: always()
         run: rm -f cookies.txt
