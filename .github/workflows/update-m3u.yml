@@ -21,16 +21,16 @@ jobs:
         with:
           python-version: '3.x'
 
-      # AJOUT : Installation de Node.js pour exécuter le JS de YouTube
-      - name: Configuration de Node.js
-        uses: actions/setup-node@v4
+      # Installation de Deno (moteur JS natif recommandé par yt-dlp)
+      - name: Configuration de Deno
+        uses: denoland/setup-deno@v2
         with:
-          node-version: '20'
+          deno-version: v2.x
 
       - name: Installation des dépendances (yt-dlp)
         run: |
           python -m pip install --upgrade pip
-          pip install yt-dlp
+          pip install --upgrade yt-dlp
 
       - name: Exécution du script de mise à jour
         run: python update_playlist.py
