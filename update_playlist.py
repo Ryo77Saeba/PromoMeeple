@@ -10,17 +10,20 @@ CHANNELS = [
 ]
 
 def get_live_m3u8(youtube_url):
-    """Extrait l'URL .m3u8 via l'API TVHTML5 de YouTube."""
+    """Extrait l'URL .m3u8 en direct via yt-dlp."""
     try:
         cmd = ["yt-dlp"]
         
-        # Si les cookies existent, on les passe
+        # Vérification et injection des cookies
         if os.path.exists("cookies.txt") and os.path.getsize("cookies.txt") > 0:
+            print("--> Utilisation du fichier cookies.txt")
             cmd.extend(["--cookies", "cookies.txt"])
+        else:
+            print("⚠️ Attention: Fichier cookies.txt introuvable ou vide !")
 
-        # Force l'utilisation du client TVHTML5 qui contourne le blocage "Sign in to confirm you're not a bot"
+        # Utilisation des clients compatibles (tv, android_vr, web)
         cmd.extend([
-            "--extractor-args", "youtube:player_client=tv,tvhtml5,android",
+            "--extractor-args", "youtube:player_client=tv,android_vr,web",
             "-g",
             youtube_url
         ])
