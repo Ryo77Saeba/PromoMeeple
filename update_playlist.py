@@ -1,7 +1,5 @@
 import urllib.request
-import json
 import re
-import subprocess
 
 # Astuce : On peut aussi utiliser l'URL /embed/ de la vidéo si l'URL /live est bloquée
 CHANNELS = [
@@ -15,6 +13,8 @@ CHANNELS = [
     ("Tokyo Asakusa Live", "https://www.youtube.com/watch?v=MwcMURMzJ7A")
 ]
 
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
 def get_video_id(youtube_url):
     """Récupère l'ID fixe de la vidéo live (11 caractères)."""
     match = re.search(r'v=([a-zA-Z0-9_-]{11})', youtube_url)
@@ -24,7 +24,7 @@ def get_video_id(youtube_url):
     try:
         req = urllib.request.Request(
             youtube_url, 
-            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+            headers={'User-Agent': USER_AGENT}
         )
         with urllib.request.urlopen(req, timeout=10) as response:
             html = response.read().decode('utf-8')
@@ -48,22 +48,14 @@ def generate_m3u():
         if video_id:
             print(f"--> ID extrait : {video_id}")
             
-            # 1. Relais principal m3u.ch (Très rapide, compatible HLS IPTV)
-            link_m3uch = f"https://m3u.ch/live/{video_id}.m3u8"
-            
-            # 2. Relais de secours 1 (Raw YouTube Live Gateway)
-            link_gateway = f"https://youtube-live-stream.vercel.app/api/live?id={video_id}"
-            
-            # 3. Relais de secours 2 (Piped API Stream)
-            link_piped = f"https://pipedapi.kavin.rocks/streams/{video_id}"
+            # Lien du flux HLS via le relais de la communauté IPTV
+            stream_url = f"https://m3u.ch/live/{video_id}.m3u8"
 
-            # Lien principal
-            content += f'#EXTINF:-1 group-title="YouTube Live",{name}\n'
-            content += f'{link_m3uch}\n'
-            
-            # Miroir de secours dans la liste IPTV
-            content += f'#EXTINF:-1 group-title="YouTube Live (Miroir)",{name} (Secours)\n'
-            content += f'{link_gateway}\n'
+            # En-têtes forcés dans le M3U pour débloquer les lecteurs IPTV
+            content += f'#EXTINF:-1 group-title="YouTube Live" http-user-agent="{USER_AGENT}",{name}\n'
+            content += f'#EXTVLCOPT:http-user-agent={USER_AGENT}\n'
+            content += f'#EXTVLCOPT:http-referrer=https://www.youtube.com/\n'
+            content += f'{stream_url}\n'
             
         else:
             print(f"❌ Impossible de trouver l'ID pour {name}")
