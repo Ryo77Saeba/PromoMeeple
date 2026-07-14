@@ -13,7 +13,7 @@ def get_live_m3u8(youtube_url):
     """Extrait l'URL .m3u8 en direct via yt-dlp."""
     try:
         # Commande standard, yt-dlp va détecter Deno tout seul
-        cmd = ["yt-dlp", "-g", youtube_url]
+        cmd = ["yt-dlp", "--cookies", "cookies.txt", "-g", youtube_url]
         
         result = subprocess.run(cmd, capture_output=True, text=True, check=False)
         
