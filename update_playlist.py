@@ -10,10 +10,20 @@ CHANNELS = [
 ]
 
 def get_live_m3u8(youtube_url):
-    """Extrait l'URL .m3u8 en direct via yt-dlp."""
+    """Extrait l'URL .m3u8 en utilisant les cookies et clients adaptés."""
     try:
-        # Commande standard, yt-dlp va détecter Deno tout seul
-        cmd = ["yt-dlp", "--cookies", "cookies.txt", "-g", youtube_url]
+        cmd = ["yt-dlp"]
+        
+        # Si le fichier cookies existe (sur GitHub Actions), on l'utilise
+        if os.path.exists("cookies.txt"):
+            cmd.extend(["--cookies", "cookies.txt"])
+            
+        # Paramètres d'extraction optimisés
+        cmd.extend([
+            "--extractor-args", "youtube:player_client=mweb,tv,android",
+            "-g",
+            youtube_url
+        ])
         
         result = subprocess.run(cmd, capture_output=True, text=True, check=False)
         
@@ -21,7 +31,7 @@ def get_live_m3u8(youtube_url):
             urls = result.stdout.strip().split('\n')
             return urls[0]
         else:
-            print(f"yt-dlp n'a pas pu extraire le flux pour {youtube_url}.\nDetails: {result.stderr.strip()}")
+            print(f"Échec pour {youtube_url}.\nDétails: {result.stderr.strip()}")
             return None
     except Exception as e:
         print(f"Erreur inattendue pour {youtube_url}: {e}")
@@ -36,11 +46,11 @@ def generate_m3u():
             content += f'#EXTINF:-1 group-title="YouTube Live",{name}\n'
             content += f'{stream_url}\n'
         else:
-            print(f"⚠️ Échec ou pas de live actif pour {name}")
+            print(f"⚠️ Échec / Pas de live actif pour {name}")
 
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write(content)
-    print("Fichier playlist.m3u généré avec succès !")
+    print("Fichier playlist.m3u mis à jour avec succès !")
 
 if __name__ == "__main__":
     generate_m3u()
