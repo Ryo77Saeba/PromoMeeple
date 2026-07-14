@@ -1,3 +1,17 @@
 #EXTM3U
-#EXTINF:-1 group-title="YouTube Live",Tokyo Shinjuku Kabukicho Live
+#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Tokyo Shinjuku Kabukicho Live
 https://www.youtube.com/api/manifest/hls_variant/id/DjdUEyjx8GM/source/yt_live_broadcast/m3u8
+#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Tokyo Shinjuku Kabukicho Live II
+https://www.youtube.com/api/manifest/hls_variant/id/gFRtAAmiFbE/source/yt_live_broadcast/m3u8
+#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Shibuya Scramble Crossing Live
+https://www.youtube.com/api/manifest/hls_variant/id/8H3nRCFVR6Y/source/yt_live_broadcast/m3u8
+#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Shibuya Scramble Crossing Live II
+https://www.youtube.com/api/manifest/hls_variant/id/dfVK7ld38Ys/source/yt_live_broadcast/m3u8
+#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Mont Fuji Live
+https://www.youtube.com/api/manifest/hls_variant/id/YQ4wbAl_7zo/source/yt_live_broadcast/m3u8
+#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Fujikawaguchiko - Mont Fuji
+https://www.youtube.com/api/manifest/hls_variant/id/eU8A7QQOcso/source/yt_live_broadcast/m3u8
+#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Shinjuku Eki Live
+https://www.youtube.com/api/manifest/hls_variant/id/Zhmmh7l6KEw/source/yt_live_broadcast/m3u8
+#EXTINF:-1 group-title="Live Cams in Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg",Tokyo Asakusa Live
+https://www.youtube.com/api/manifest/hls_variant/id/MwcMURMzJ7A/source/yt_live_broadcast/m3u8
