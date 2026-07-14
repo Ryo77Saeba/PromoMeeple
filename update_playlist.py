@@ -3,7 +3,7 @@ import os
 
 # Astuce : On peut aussi utiliser l'URL /embed/ de la vidéo si l'URL /live est bloquée
 CHANNELS = [
-    ("Tokyo Shinjuku Kabukicho Live", "https://www.youtube.com/embed/DjdUEyjx8GM?autoplay=1&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;hl=en&amp;disablekb=1&amp;cc_load_policy=0&amp;loop=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.skylinewebcams.com&amp;widgetid=1&amp;forigin=https%3A%2F%2Fwww.skylinewebcams.com%2Ffr%2Fwebcam%2Fjapan%2Fkanto%2Ftokyo%2Fshinjuku-kabukicho.html&amp;aoriginsup=1&amp;gporigin=https%3A%2F%2Fwww.skylinewebcams.com%2Fwebcam%2Fjapan.html&amp;vf=1"),
+    ("Tokyo Shinjuku Kabukicho Live", "https://www.youtube.com/embed/DjdUEyjx8GM?si=_aUfUbed5WgY_Rug"),
 
 ]
 
