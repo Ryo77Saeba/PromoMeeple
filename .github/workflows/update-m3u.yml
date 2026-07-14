@@ -21,6 +21,11 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Configuration de Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Configuration de Deno
         uses: denoland/setup-deno@v2
         with:
@@ -31,13 +36,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install --upgrade yt-dlp
 
-      # Étape sécurisée : décode le secret s'il est en base64 ou l'écrit directement
       - name: Création du fichier cookies
         env:
           YOUTUBE_COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
         run: |
           echo "$YOUTUBE_COOKIES" > cookies.txt
-          echo "Taille du fichier cookies : $(wc -c < cookies.txt) octets"
 
       - name: Exécution du script de mise à jour
         run: python update_playlist.py
