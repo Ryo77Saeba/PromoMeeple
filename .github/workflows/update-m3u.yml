@@ -9,20 +9,23 @@ jobs:
   update-playlist:
     runs-on: ubuntu-latest
 
-    # AJOUTER CE BLOC PERMISSIONS
     permissions:
       contents: write
 
     steps:
-      # Mise à jour vers la v5
       - name: Checkout du dépôt
         uses: actions/checkout@v5
 
-      # Mise à jour vers la v6
       - name: Configuration de Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.x'
+
+      # AJOUT : Installation de Node.js pour exécuter le JS de YouTube
+      - name: Configuration de Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
 
       - name: Installation des dépendances (yt-dlp)
         run: |
