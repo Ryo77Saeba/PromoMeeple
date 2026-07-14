@@ -9,6 +9,10 @@ jobs:
   update-playlist:
     runs-on: ubuntu-latest
 
+    # AJOUTER CE BLOC PERMISSIONS
+    permissions:
+      contents: write
+
     steps:
       # Mise à jour vers la v5
       - name: Checkout du dépôt
