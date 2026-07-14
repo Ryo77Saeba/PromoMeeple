@@ -13,7 +13,7 @@ def get_live_m3u8(youtube_url):
     """Extrait l'URL .m3u8 en direct via yt-dlp."""
     try:
         # On enlève le paramètre '-f', 'b' qui causait l'erreur
-        cmd = ["yt-dlp", "-g", youtube_url]
+        cmd = ["yt-dlp", "--js-runtimes", "node", "-g", youtube_url]
         
         # check=False évite de faire planter tout le script si une chaîne pose problème
         result = subprocess.run(cmd, capture_output=True, text=True, check=False)
