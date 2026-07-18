@@ -12,20 +12,20 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout
+      - name: Checkout du dépôt
         uses: actions/checkout@v5
 
-      - name: Setup Python
+      - name: Configuration de Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.x'
 
-      - name: Generer la Playlist
+      - name: Générer la Playlist M3U
         run: python update_playlist.py
 
-      - name: Commit & Push
+      - name: Commit et Push du fichier Stream
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add playlist.m3u
-          git diff --staged --quiet || (git commit -m "Auto-update playlist.m3u" && git push)
+          git add Stream
+          git diff --staged --quiet || (git commit -m "Auto-update Stream" && git push)
