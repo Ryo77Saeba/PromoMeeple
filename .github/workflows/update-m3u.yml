@@ -19,6 +19,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    # Donne explicitement les droits d'écriture au jeton GitHub (Sécurité)
+    permissions:
+      contents: write
+
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE
       - name: Checkout du dépôt
@@ -29,25 +33,24 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Configuration de Git
-        run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Action"
-
+      # Exécution directe du script (plus fiable que de passer par autorun.sh)
       - name: Exécution du script de récupération
         run: |
-          pwd
-          chmod +x autorun.sh
-          ./autorun.sh
+          python scripts/youtube_m3ugrabber.py
 
       - name: Vérification et Commit des modifications
         run: |
-          git add -A
-          # Vérifie s'il y a des changements avant de faire le commit
-          if git diff-index --quiet HEAD --; then
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          
+          # Ajoute absolument tout, y compris les nouveaux fichiers du dossier Stream
+          git add youtube.m3u Stream/
+          
+          # Vérifie s'il y a des changements réels mis en mémoire (staged)
+          if git diff --cached --quiet; then
             echo "Aucune modification détectée. Fin du workflow."
           else
             echo "Modifications détectées. Envoi des mises à jour..."
-            git commit -m "Mise à jour automatique des liens M3U"
+            git commit -m "Mise à jour automatique des liens M3U [skip ci]"
             git push origin main
           fi
