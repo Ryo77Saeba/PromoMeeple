@@ -1,7 +1,6 @@
 #! /usr/bin/python3
-import requests
 import os
-import re
+import subprocess
 
 # Emplacements des répertoires
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -12,30 +11,25 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 global_channels = []
 
 def grab(url, channel_id, metadata_header):
-    """Récupère l'URL brute du master m3u8 en direct de YouTube pour l'IPTV."""
+    """Utilise yt-dlp pour extraire le véritable lien m3u8 direct de YouTube."""
     stream_link = None
     try:
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-        response = requests.get(url, headers=headers, timeout=15).text
+        # On lance yt-dlp pour récupérer l'URL brute du flux HLS (m3u8)
+        # -g permet d'afficher uniquement l'URL finale
+        cmd = ["yt-dlp", "-g", "-f", "best", url]
+        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=30)
         
-        # Recherche du lien m3u8 master dynamique fournit par YouTube
-        match = re.search(r'(https://[^\s"\']+\.m3u8)', response)
-        if match:
-            stream_link = match.group(1)
-    except Exception:
-        pass
+        if result.returncode == 0:
+            stream_link = result.stdout.strip()
+    except Exception as e:
+        print(f"Erreur lors de l'extraction pour {channel_id}: {e}")
 
-    # Si YouTube bloque l'extraction temporairement, on génère un lien de redirection dynamique
-    # Ce type de lien force l'IPTV à demander le flux en direct mis à jour à chaque ouverture
+    # Si yt-dlp échoue, on met l'URL YouTube d'origine en secours
     if not stream_link:
-        # Extraction de l'ID de chaîne si présent dans l'URL pour créer un fallback intelligent
-        if "channel/" in url:
-            c_id = url.split("channel/")[1].split("/")[0]
-            stream_link = f"https://youtube.com/channel/{c_id}/live"
-        else:
-            stream_link = url
+        print(f"⚠️ Impossible d'extraire le flux pour {channel_id}. Utilisation du lien de secours.")
+        stream_link = url
 
-    # Génération du fichier m3u8 individuel (Master de redirection pour l'IPTV)
+    # Génération du fichier m3u8 individuel requis
     individual_content = "#EXTM3U x-tvg-url=\"https://github.com/botallen/epg/releases/download/latest/epg.xml\"\n"
     individual_content += f"{metadata_header}\n{stream_link}\n"
     
@@ -43,9 +37,9 @@ def grab(url, channel_id, metadata_header):
     with open(file_path, 'w', encoding='utf-8') as f_out:
         f_out.write(individual_content)
     
-    # Stockage pour la playlist globale youtube.m3u
+    # Stockage pour la playlist globale
     global_channels.append((metadata_header, stream_link))
-    print(f"Lien IPTV généré pour la chaîne [{channel_id}] -> Stream fonctionnel.")
+    print(f"✅ Lien direct extrait avec succès pour [{channel_id}]")
 
 # --- Lecture du fichier de configuration ---
 config_path = os.path.join(BASE_DIR, "youtube_channel_info.txt")
@@ -71,10 +65,10 @@ with open(config_path, 'r', encoding='utf-8') as f:
         else:
             grab(line, current_tvg_id, current_header)
 
-# Écriture de la playlist globale d'entrée pour votre application IPTV
+# Écriture de la playlist globale youtube.m3u
 with open(GLOBAL_M3U_PATH, 'w', encoding='utf-8') as f_global:
     f_global.write("#EXTM3U x-tvg-url=\"https://github.com/botallen/epg/releases/download/latest/epg.xml\"\n")
     for header, link in global_channels:
         f_global.write(f"{header}\n{link}\n")
 
-print(f"Fichier global mis à jour avec succès à la racine : youtube.m3u")
+print(f"\n🚀 Fichier global mis à jour à la racine : youtube.m3u")
