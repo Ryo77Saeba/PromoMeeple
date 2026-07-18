@@ -5,7 +5,7 @@ name: M3U generator
 # Controls when the action will run. 
 on:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 */4 * * *' # S'exécute toutes les 4 heures
 
   pull_request:
     branches:
@@ -16,44 +16,38 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Checks-out your repository under $GITHUB_WORKSPACE
       - name: Checkout du dépôt
-        uses: actions/checkout@v5  # <-- Changez v2 par v5 ici
+        uses: actions/checkout@v5
 
       - name: Configuration de Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.x'
 
-      # Runs a single command using the runners shell
-      #- name: Run a one-line script
-      #  run: echo testing!
-
-      # Runs a set of commands using the runners shell 
-      - name: config
+      - name: Configuration de Git
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
 
-      - name: Main
+      - name: Exécution du script de récupération
         run: |
           pwd
           chmod +x autorun.sh
           ./autorun.sh
 
-      - name: git add
+      - name: Vérification et Commit des modifications
         run: |
           git add -A
-          ls -la
-
-      - name: commit & push
-        run: |
-          git commit -m "links are updated"
-          git push -f
+          # Vérifie s'il y a des changements avant de faire le commit
+          if git diff-index --quiet HEAD --; then
+            echo "Aucune modification détectée. Fin du workflow."
+          else
+            echo "Modifications détectées. Envoi des mises à jour..."
+            git commit -m "Mise à jour automatique des liens M3U"
+            git push origin main
+          fi
