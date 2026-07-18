@@ -10,14 +10,29 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 global_channels = []
 
 def grab(url, channel_id, metadata_header):
-    """Génère un lien YouTube compatible IPTV en simulant une extension .m3u8."""
+    """Traduit l'URL YouTube en un lien de flux direct via une API de relais IPTV."""
     
-    # On nettoie l'URL et on ajoute un faux paramètre .m3u8 à la fin
-    # Si l'URL contient déjà un '?', on ajoute avec '&', sinon avec '?'
-    if "?" in url:
-        stream_link = f"{url}&format=m3u8&file=.m3u8"
+    # Extraction de l'identifiant (ID) de la chaîne ou de la vidéo
+    # Exemple : si l'URL est https://www.youtube.com/channel/UCBFDJX...
+    video_id = ""
+    
+    if "channel/" in url:
+        video_id = url.split("channel/")[1].split("/")[0]
+        # Format de l'API pour une chaîne en direct (Channel ID)
+        stream_link = f"https://youtube-to-m3u.online/api/live/{video_id}.m3u8"
+    elif "@" in url:
+        video_id = url.split("youtube.com/")[1].split("/")[0]
+        stream_link = f"https://youtube-to-m3u.online/api/live/{video_id}.m3u8"
     else:
-        stream_link = f"{url}?format=m3u8&file=.m3u8"
+        # Si c'est un lien direct vers une vidéo (/watch?v=ID ou /live/ID)
+        if "v=" in url:
+            video_id = url.split("v=")[1].split("&")[0]
+        elif "live/" in url:
+            video_id = url.split("live/")[1].split("?")[0]
+        else:
+            video_id = url.split("/")[-1]
+        # Format de l'API pour une vidéo spécifique
+        stream_link = f"https://youtube-to-m3u.online/api/video/{video_id}.m3u8"
 
     # Génération du fichier m3u8 individuel pour GitHub Pages
     individual_content = "#EXTM3U x-tvg-url=\"https://github.com/botallen/epg/releases/download/latest/epg.xml\"\n"
@@ -27,9 +42,9 @@ def grab(url, channel_id, metadata_header):
     with open(file_path, 'w', encoding='utf-8') as f_out:
         f_out.write(individual_content)
     
-    # Stockage pour la playlist globale
+    # Stockage pour la playlist globale youtube.m3u
     global_channels.append((metadata_header, stream_link))
-    print(f"✅ Lien forcé avec extension pour : Stream/{channel_id}.m3u8")
+    print(f"✅ Lien API IPTV généré pour : Stream/{channel_id}.m3u8")
 
 # --- Lecture du fichier de configuration ---
 config_path = os.path.join(BASE_DIR, "youtube_channel_info.txt")
@@ -61,4 +76,4 @@ with open(GLOBAL_M3U_PATH, 'w', encoding='utf-8') as f_global:
     for header, link in global_channels:
         f_global.write(f"{header}\n{link}\n")
 
-print(f"\n🚀 Playlist statique générée avec succès pour GitHub Pages !")
+print(f"\n🚀 Playlist générée avec des liens de flux directs et purs (.m3u8) !")
