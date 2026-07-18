@@ -20,12 +20,12 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Générer la Playlist M3U
+      - name: Générer les liens individuels
         run: python update_playlist.py
 
-      - name: Commit et Push du fichier Stream
+      - name: Commit et Push des modifications
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add Stream
-          git diff --staged --quiet || (git commit -m "Auto-update Stream" && git push)
+          git add Stream/*.m3u8
+          git diff --staged --quiet || (git commit -m "Auto-update individual channel streams" && git push)
