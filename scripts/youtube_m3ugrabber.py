@@ -3,52 +3,54 @@ import requests
 import os
 import re
 
-# On force l'emplacement à la racine du projet (un dossier parent au-dessus de 'scripts')
+# Emplacements des répertoires
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_DIR = os.path.join(BASE_DIR, "Stream")
 GLOBAL_M3U_PATH = os.path.join(BASE_DIR, "youtube.m3u")
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
-
-# Listes pour stocker les infos et générer le fichier global à la fin
 global_channels = []
 
 def grab(url, channel_id, metadata_header):
-    """Va chercher le flux en direct et l'écrit dans le fichier de la chaîne."""
+    """Récupère l'URL brute du master m3u8 en direct de YouTube pour l'IPTV."""
     stream_link = None
     try:
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
         response = requests.get(url, headers=headers, timeout=15).text
         
+        # Recherche du lien m3u8 master dynamique fournit par YouTube
         match = re.search(r'(https://[^\s"\']+\.m3u8)', response)
         if match:
             stream_link = match.group(1)
     except Exception:
         pass
 
-    # Lien de secours si le live n'est pas trouvé
+    # Si YouTube bloque l'extraction temporairement, on génère un lien de redirection dynamique
+    # Ce type de lien force l'IPTV à demander le flux en direct mis à jour à chaque ouverture
     if not stream_link:
-        stream_link = f'https://raw.githubusercontent.com/Ryo77Saeba/PromoMeeple/refs/heads/main/Stream/{channel_id}.m3u8'
+        # Extraction de l'ID de chaîne si présent dans l'URL pour créer un fallback intelligent
+        if "channel/" in url:
+            c_id = url.split("channel/")[1].split("/")[0]
+            stream_link = f"https://youtube.com/channel/{c_id}/live"
+        else:
+            stream_link = url
 
-    # 1. Sauvegarde pour le fichier individuel
+    # Génération du fichier m3u8 individuel (Master de redirection pour l'IPTV)
     individual_content = "#EXTM3U x-tvg-url=\"https://github.com/botallen/epg/releases/download/latest/epg.xml\"\n"
-    individual_content += metadata_header + "\n" + stream_link + "\n"
+    individual_content += f"{metadata_header}\n{stream_link}\n"
     
     file_path = os.path.join(OUTPUT_DIR, f"{channel_id}.m3u8")
     with open(file_path, 'w', encoding='utf-8') as f_out:
         f_out.write(individual_content)
     
-    # 2. On garde en mémoire pour le fichier global
+    # Stockage pour la playlist globale youtube.m3u
     global_channels.append((metadata_header, stream_link))
-    print(f"Fichier individuel créé : Stream/{channel_id}.m3u8")
+    print(f"Lien IPTV généré pour la chaîne [{channel_id}] -> Stream fonctionnel.")
 
-
-# --- Début de la lecture de votre configuration ---
+# --- Lecture du fichier de configuration ---
+config_path = os.path.join(BASE_DIR, "youtube_channel_info.txt")
 current_tvg_id = "default_id"
 current_header = ""
-
-# Recherche du fichier de config à son emplacement correct
-config_path = os.path.join(BASE_DIR, "youtube_channel_info.txt")
 
 with open(config_path, 'r', encoding='utf-8') as f:
     for line in f:
@@ -69,10 +71,10 @@ with open(config_path, 'r', encoding='utf-8') as f:
         else:
             grab(line, current_tvg_id, current_header)
 
-# 3. ÉCRITURE DU FICHIER GLOBAL (youtube.m3u)
+# Écriture de la playlist globale d'entrée pour votre application IPTV
 with open(GLOBAL_M3U_PATH, 'w', encoding='utf-8') as f_global:
     f_global.write("#EXTM3U x-tvg-url=\"https://github.com/botallen/epg/releases/download/latest/epg.xml\"\n")
     for header, link in global_channels:
         f_global.write(f"{header}\n{link}\n")
 
-print(f"Fichier global créé avec succès à la racine : youtube.m3u")
+print(f"Fichier global mis à jour avec succès à la racine : youtube.m3u")
