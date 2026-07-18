@@ -1,5 +1,0 @@
-#EXTM3U
-#EXTINF:-1 group-title="YouTube Live" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",Shinjuku Eki Live
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://www.youtube.com/
-https://m3u.ch/live/Zhmmh7l6KEw.m3u8
