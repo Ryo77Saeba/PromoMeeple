@@ -1,15 +1,15 @@
 #EXTM3U x-tvg-url="https://github.com/botallen/epg/releases/download/latest/epg.xml"
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="tokyo_kabukicho_1", Tokyo Shinjuku Kabukicho Live
-https://www.youtube.com/watch?v=XVmV6wO9riI&format=m3u8&file=.m3u8
+https://youtube-to-m3u.online/api/video/XVmV6wO9riI.m3u8
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="tokyo_kabukicho_2", Tokyo Shinjuku Kabukicho Live II
-https://www.youtube.com/watch?v=XVmV6wO9riI&format=m3u8&file=.m3u8
+https://youtube-to-m3u.online/api/video/XVmV6wO9riI.m3u8
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="shibuya_crossing", Shibuya Scramble Crossing Live
-https://www.youtube.com/watch?v=dfVK7ld38Ys&format=m3u8&file=.m3u8
+https://youtube-to-m3u.online/api/video/dfVK7ld38Ys.m3u8
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="mount_fuji", Mont Fuji Live
-https://www.youtube.com/watch?v=YQ4wbAl_7zo&format=m3u8&file=.m3u8
+https://youtube-to-m3u.online/api/video/YQ4wbAl_7zo.m3u8
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="fujikawaguchiko_lake", Fujikawaguchiko
-https://www.youtube.com/watch?v=PW6zhYOkunI&format=m3u8&file=.m3u8
+https://youtube-to-m3u.online/api/video/PW6zhYOkunI.m3u8
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="shinjuku_station", Shinjuku Eki Live
-https://www.youtube.com/watch?v=Zhmmh7l6KEw&format=m3u8&file=.m3u8
+https://youtube-to-m3u.online/api/video/Zhmmh7l6KEw.m3u8
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="tokyo_asakusa", Tokyo Asakusa Live
-https://www.youtube.com/watch?v=IOjDHq2bzMY&format=m3u8&file=.m3u8
+https://youtube-to-m3u.online/api/video/IOjDHq2bzMY.m3u8
