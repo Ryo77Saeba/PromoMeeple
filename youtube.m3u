@@ -1,15 +1,15 @@
 #EXTM3U x-tvg-url="https://github.com/botallen/epg/releases/download/latest/epg.xml"
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="tokyo_kabukicho_1", Tokyo Shinjuku Kabukicho Live
-https://youtube.com/channel/UCBFDJXGCOdMjVtg2AnReoXA/live
+https://www.youtube.com/channel/UCBFDJXGCOdMjVtg2AnReoXA/Live
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="tokyo_kabukicho_2", Tokyo Shinjuku Kabukicho Live II
-https://youtube.com/channel/UCBFDJXGCOdMjVtg2AnReoXA/live
+https://www.youtube.com/channel/UCBFDJXGCOdMjVtg2AnReoXA/Live
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="shibuya_crossing", Shibuya Scramble Crossing Live
-https://youtube.com/channel/UCoQBJMzcwmXrRSHBFAlTsIw/live
+https://www.youtube.com/channel/UCoQBJMzcwmXrRSHBFAlTsIw/Live
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="mount_fuji", Mont Fuji Live
 https://www.youtube.com/@fujinetkawaguchiko/live
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="fujikawaguchiko_lake", Fujikawaguchiko
-https://youtube.com/channel/UCk2oG--VyYST4SYyQkeadjA/live
+https://www.youtube.com/channel/UCk2oG--VyYST4SYyQkeadjA/Live
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="shinjuku_station", Shinjuku Eki Live
-https://youtube.com/channel/UC8cnCaq-MquhsebMer9A9rQ/live
+https://www.youtube.com/channel/UC8cnCaq-MquhsebMer9A9rQ/live
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="tokyo_asakusa", Tokyo Asakusa Live
-https://youtube.com/channel/UCuS18SHV5Nhqi9OtreOBmnA/live
+https://www.youtube.com/channel/UCuS18SHV5Nhqi9OtreOBmnA/Live
