@@ -1,23 +1,23 @@
 ~~ DO NOT EDIT THE FIRST 2 LINES
 ~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
 
-Tokyo Shinjuku Kabukicho Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
+Tokyo Shinjuku Kabukicho Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg | tokyo_kabukicho_1
 https://www.youtube.com/channel/UCBFDJXGCOdMjVtg2AnReoXA/Live
 
-Tokyo Shinjuku Kabukicho Live II | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
+Tokyo Shinjuku Kabukicho Live II | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg | tokyo_kabukicho_2
 https://www.youtube.com/channel/UCBFDJXGCOdMjVtg2AnReoXA/Live
 
-Shibuya Scramble Crossing Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
+Shibuya Scramble Crossing Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg | shibuya_crossing
 https://www.youtube.com/channel/UCoQBJMzcwmXrRSHBFAlTsIw/Live
 
-Mont Fuji Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
+Mont Fuji Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg | mount_fuji
 https://www.youtube.com/@fujinetkawaguchiko/live
 
-Fujikawaguchiko | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
+Fujikawaguchiko | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg | fujikawaguchiko_lake
 https://www.youtube.com/channel/UCk2oG--VyYST4SYyQkeadjA/Live
 
-Shinjuku Eki Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
+Shinjuku Eki Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg | shinjuku_station
 https://www.youtube.com/channel/UC8cnCaq-MquhsebMer9A9rQ/live
 
-Tokyo Asakusa Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
+Tokyo Asakusa Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg | tokyo_asakusa
 https://www.youtube.com/channel/UCuS18SHV5Nhqi9OtreOBmnA/Live
