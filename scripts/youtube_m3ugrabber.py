@@ -10,11 +10,14 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 global_channels = []
 
 def grab(url, channel_id, metadata_header):
-    """Génère un lien HLS officiel compatible avec les lecteurs IPTV modernes."""
+    """Génère un lien YouTube compatible IPTV en simulant une extension .m3u8."""
     
-    # Construction du lien direct universel utilisé par les lecteurs IPTV
-    # Ce format force l'application IPTV à récupérer elle-même le flux vidéo
-    stream_link = url
+    # On nettoie l'URL et on ajoute un faux paramètre .m3u8 à la fin
+    # Si l'URL contient déjà un '?', on ajoute avec '&', sinon avec '?'
+    if "?" in url:
+        stream_link = f"{url}&format=m3u8&file=.m3u8"
+    else:
+        stream_link = f"{url}?format=m3u8&file=.m3u8"
 
     # Génération du fichier m3u8 individuel pour GitHub Pages
     individual_content = "#EXTM3U x-tvg-url=\"https://github.com/botallen/epg/releases/download/latest/epg.xml\"\n"
@@ -26,7 +29,7 @@ def grab(url, channel_id, metadata_header):
     
     # Stockage pour la playlist globale
     global_channels.append((metadata_header, stream_link))
-    print(f"✅ Fichier configuré pour GitHub Pages : Stream/{channel_id}.m3u8")
+    print(f"✅ Lien forcé avec extension pour : Stream/{channel_id}.m3u8")
 
 # --- Lecture du fichier de configuration ---
 config_path = os.path.join(BASE_DIR, "youtube_channel_info.txt")
