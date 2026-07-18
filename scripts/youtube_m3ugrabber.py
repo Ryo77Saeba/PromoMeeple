@@ -1,7 +1,7 @@
 #! /usr/bin/python3
 
 banner = r'''
-
+'''
 
 import requests
 import os
@@ -11,19 +11,20 @@ windows = False
 if 'win' in sys.platform:
     windows = True
 
-def grab(url):
+# La fonction accepte maintenant le "channel_id" en paramètre
+def grab(url, channel_id):
     response = requests.get(url, timeout=15).text
     if '.m3u8' not in response:
-        #response = requests.get(url).text
         if '.m3u8' not in response:
             if windows:
-                print('https://raw.githubusercontent.com/benmoose39/YouTube_to_m3u/main/assets/moose_na.m3u')
+                # Utilisation de l'ID de la chaîne ici
+                print(f'https://raw.githubusercontent.com/Ryo77Saeba/PromoMeeple/refs/heads/main/Stream/{channel_id}.m3u')
                 return
-            #os.system(f'wget {url} -O temp.txt')
             os.system(f'curl "{url}" > temp.txt')
             response = ''.join(open('temp.txt').readlines())
             if '.m3u8' not in response:
-                print('https://raw.githubusercontent.com/benmoose39/YouTube_to_m3u/main/assets/moose_na.m3u')
+                # Utilisation de l'ID de la chaîne ici aussi
+                print(f'https://raw.githubusercontent.com/Ryo77Saeba/PromoMeeple/refs/heads/main/Stream/{channel_id}.m3u')
                 return
     end = response.find('.m3u8') + 5
     tuner = 100
@@ -39,7 +40,10 @@ def grab(url):
 
 print('#EXTM3U x-tvg-url="https://github.com/botallen/epg/releases/download/latest/epg.xml"')
 print(banner)
-#s = requests.Session()
+
+# Variable temporaire pour stocker l'ID extrait de la ligne précédente
+current_tvg_id = "moose_na"
+
 with open('../youtube_channel_info.txt') as f:
     for line in f:
         line = line.strip()
@@ -51,10 +55,15 @@ with open('../youtube_channel_info.txt') as f:
             grp_title = line[1].strip().title()
             tvg_logo = line[2].strip()
             tvg_id = line[3].strip()
+            
+            # On mémorise le tvg-id actuel pour la ligne d'URL qui va suivre
+            current_tvg_id = tvg_id
+            
             print(f'\n#EXTINF:-1 group-title="{grp_title}" tvg-logo="{tvg_logo}" tvg-id="{tvg_id}", {ch_name}')
         else:
-            grab(line)
+            # On transmet l'ID mémorisé à la fonction grab
+            grab(line, current_tvg_id)
             
 if 'temp.txt' in os.listdir():
-    #os.system('rm temp.txt')
+    os.system('rm temp.txt')
     os.system('rm watch*')
