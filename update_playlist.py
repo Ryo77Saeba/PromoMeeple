@@ -15,8 +15,9 @@ CHANNELS = [
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
-# Enregistrement direct dans le fichier nommé "Stream"
-OUTPUT_FILE = "Stream"
+# Définition du chemin cible : fichier Stream.m3u dans le dossier Stream
+OUTPUT_DIR = "Stream"
+OUTPUT_FILE = os.path.join(OUTPUT_DIR, "Stream.m3u")
 
 def get_video_id(youtube_url):
     """Extrait l'identifiant vidéo unique de 11 caractères du live YouTube."""
@@ -42,6 +43,9 @@ def get_video_id(youtube_url):
     return None
 
 def generate_m3u():
+    # S'assure que le dossier existant est bien accessible
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    
     content = "#EXTM3U\n"
     
     for name, url in CHANNELS:
@@ -60,10 +64,10 @@ def generate_m3u():
         else:
             print(f"❌ Impossible de trouver l'ID pour {name}")
 
-    # Écriture directe dans le fichier "Stream"
+    # Écriture dans Stream/Stream.m3u
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(content)
-    print(f"\nFichier généré avec succès sous le nom : {OUTPUT_FILE}")
+    print(f"\nFichier généré avec succès dans : {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     generate_m3u()
