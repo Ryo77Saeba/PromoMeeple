@@ -14,10 +14,13 @@ CHANNELS = [
 ]
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-
-# Définition du chemin cible : fichier Stream.m3u dans le dossier Stream
 OUTPUT_DIR = "Stream"
-OUTPUT_FILE = os.path.join(OUTPUT_DIR, "Stream.m3u")
+
+def slugify(text):
+    """Convertit le nom de la chaîne en nom de fichier propre (ex: "France 24" -> "france_24")."""
+    text = text.lower()
+    text = re.sub(r'[^a-z0-9\s_-]', '', text)
+    return re.sub(r'[\s-]+', '_', text).strip('_')
 
 def get_video_id(youtube_url):
     """Extrait l'identifiant vidéo unique de 11 caractères du live YouTube."""
@@ -42,11 +45,9 @@ def get_video_id(youtube_url):
         print(f"Erreur d'extraction d'ID pour {youtube_url}: {e}")
     return None
 
-def generate_m3u():
-    # S'assure que le dossier existant est bien accessible
+def generate_individual_links():
+    # S'assure que le dossier existant "Stream" est bien accessible
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    
-    content = "#EXTM3U\n"
     
     for name, url in CHANNELS:
         print(f"Traitement : {name}...")
@@ -55,19 +56,25 @@ def generate_m3u():
         if video_id:
             print(f"--> ID extrait : {video_id}")
             
+            # Construction du contenu du fichier M3U8 individuel
             stream_url = f"https://m3u.ch/live/{video_id}.m3u8"
-
+            
+            content = "#EXTM3U\n"
             content += f'#EXTINF:-1 group-title="YouTube Live" http-user-agent="{USER_AGENT}",{name}\n'
             content += f'#EXTVLCOPT:http-user-agent={USER_AGENT}\n'
             content += f'#EXTVLCOPT:http-referrer=https://www.youtube.com/\n'
             content += f'{stream_url}\n'
+            
+            # Génération du nom de fichier unique
+            file_name = f"{slugify(name)}.m3u8"
+            output_file = os.path.join(OUTPUT_DIR, file_name)
+            
+            # Écriture du fichier individuel
+            with open(output_file, "w", encoding="utf-8") as f:
+                f.write(content)
+            print(f"--> Fichier généré : {output_file}")
         else:
             print(f"❌ Impossible de trouver l'ID pour {name}")
 
-    # Écriture dans Stream/Stream.m3u
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write(content)
-    print(f"\nFichier généré avec succès dans : {OUTPUT_FILE}")
-
 if __name__ == "__main__":
-    generate_m3u()
+    generate_individual_links()
