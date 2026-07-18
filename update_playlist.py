@@ -15,8 +15,11 @@ CHANNELS = [
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
+# Enregistrement direct dans le fichier nommé "Stream"
+OUTPUT_FILE = "Stream"
+
 def get_video_id(youtube_url):
-    """Récupère l'ID fixe de la vidéo live (11 caractères)."""
+    """Extrait l'identifiant vidéo unique de 11 caractères du live YouTube."""
     match = re.search(r'v=([a-zA-Z0-9_-]{11})', youtube_url)
     if match:
         return match.group(1)
@@ -48,21 +51,19 @@ def generate_m3u():
         if video_id:
             print(f"--> ID extrait : {video_id}")
             
-            # Lien du flux HLS via le relais de la communauté IPTV
             stream_url = f"https://m3u.ch/live/{video_id}.m3u8"
 
-            # En-têtes forcés dans le M3U pour débloquer les lecteurs IPTV
             content += f'#EXTINF:-1 group-title="YouTube Live" http-user-agent="{USER_AGENT}",{name}\n'
             content += f'#EXTVLCOPT:http-user-agent={USER_AGENT}\n'
             content += f'#EXTVLCOPT:http-referrer=https://www.youtube.com/\n'
             content += f'{stream_url}\n'
-            
         else:
             print(f"❌ Impossible de trouver l'ID pour {name}")
 
-    with open("playlist.m3u", "w", encoding="utf-8") as f:
+    # Écriture directe dans le fichier "Stream"
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(content)
-    print("\nFichier playlist.m3u généré avec succès !")
+    print(f"\nFichier généré avec succès sous le nom : {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     generate_m3u()
