@@ -1,15 +1,15 @@
 #EXTM3U x-tvg-url="https://github.com/botallen/epg/releases/download/latest/epg.xml"
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="tokyo_kabukicho_1", Tokyo Shinjuku Kabukicho Live
-https://www.youtube.com/channel/UCBFDJXGCOdMjVtg2AnReoXA/Live
+https://www.youtube.com/watch?v=XVmV6wO9riI
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="tokyo_kabukicho_2", Tokyo Shinjuku Kabukicho Live II
-https://www.youtube.com/channel/UCBFDJXGCOdMjVtg2AnReoXA/Live
+https://www.youtube.com/watch?v=XVmV6wO9riI
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="shibuya_crossing", Shibuya Scramble Crossing Live
-https://www.youtube.com/channel/UCoQBJMzcwmXrRSHBFAlTsIw/Live
+https://www.youtube.com/watch?v=dfVK7ld38Ys
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="mount_fuji", Mont Fuji Live
-https://www.youtube.com/@fujinetkawaguchiko/live
+https://www.youtube.com/watch?v=YQ4wbAl_7zo
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="fujikawaguchiko_lake", Fujikawaguchiko
-https://www.youtube.com/channel/UCk2oG--VyYST4SYyQkeadjA/Live
+https://www.youtube.com/watch?v=PW6zhYOkunI
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="shinjuku_station", Shinjuku Eki Live
-https://www.youtube.com/channel/UC8cnCaq-MquhsebMer9A9rQ/live
+https://www.youtube.com/watch?v=Zhmmh7l6KEw
 #EXTINF:-1 group-title="Webcams In Japan" tvg-logo="https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg" tvg-id="tokyo_asakusa", Tokyo Asakusa Live
-https://www.youtube.com/channel/UCuS18SHV5Nhqi9OtreOBmnA/Live
+https://www.youtube.com/watch?v=IOjDHq2bzMY
