@@ -2,29 +2,22 @@
 ~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
 
 Tokyo Shinjuku Kabukicho Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
-https://www.youtube.com/watch?v=DjdUEyjx8GM
-
-Tokyo Shinjuku Kabukicho Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
-https://www.youtube.com/watch?v=DjdUEyjx8GM
+https://www.youtube.com/@kabukicho-1/live
 
 Tokyo Shinjuku Kabukicho Live II | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
-https://www.youtube.com/watch?v=gFRtAAmiFbE
+https://www.youtube.com/@kabukicho-2/live
 
 Shibuya Scramble Crossing Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
-https://www.youtube.com/watch?v=8H3nRCFVR6Y
-
-Shibuya Scramble Crossing Live II | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
-https://www.youtube.com/watch?v=dfVK7ld38Ys
+https://www.youtube.com/@FNNnewsCH/live
 
 Mont Fuji Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
-https://www.youtube.com/watch?v=YQ4wbAl_7zo
+https://www.youtube.com/@fujinetkawaguchiko/live
 
 Fujikawaguchiko | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
-https://www.youtube.com/watch?v=eU8A7QQOcso
+https://www.youtube.com/@UTYUTY_6ch/live
 
 Shinjuku Eki Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
-https://www.youtube.com/watch?v=Zhmmh7l6KEw
+https://www.youtube.com/@CROSSSPACE_ch/live
 
 Tokyo Asakusa Live | Webcams in Japan | https://cdn.jsdelivr.net/gh/SkylineWebcams/web@v2/skylinewebcams.svg |
-https://www.youtube.com/watch?v=MwcMURMzJ7A
-
+https://www.youtube.com/@%E8%88%B9%E5%AE%BF%E3%81%82%E3%81%BF%E6%B8%85/live
