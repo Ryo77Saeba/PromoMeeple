@@ -3,7 +3,7 @@
 # General
 
 #EXTINF:-1 group-title="General" tvg-id="ABCテレビ_jp" tvg-name="ABC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Asahi_Broadcasting_Corporation_Logo.svg/250px-Asahi_Broadcasting_Corporation_Logo.svg.png",ABC
-https://naori-test.netgenx.site/pxx.php?shk_cid=gx02
+https://akariko-bck1.sankuria.sbs/stream/jp/abc/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="General" tvg-id="CH.650" tvg-name="Action Channel (AXN)" tvg-logo="https://jp-epg-26f0ce.gitlab.io/logos/action_channel_axn.png",Action Channel (AXN)
 https://akariko-bck1.sankuria.sbs/stream/jp/action_channel/stream-output.m3u8?mode=hls
 #EXTINF:-1 group-title="General" tvg-id="CH.677" tvg-name="Animal Planet" tvg-logo="https://jp-epg-26f0ce.gitlab.io/logos/animal_planet.png",Animal Planet
