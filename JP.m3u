@@ -4,7 +4,7 @@ https://hamada.gaki-no-tsukai.stream/hls/test.m3u8
 #EXTINF:-1 tvg-id="JOAXDTV.jp@SD" tvg-logo="https://www.ntv.co.jp/_next/static/media/logo-ntv.0eilwoxg3c02e.png" ,日本テレビ
 https://ntv5.mov3.co/hls/ntv.m3u8
 #EXTINF:-1 tvg-id="JOCXDTV.jp@SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Y1yRJoiIRHaDQ4Ef-RNN34xzPXxYRLn-fwUsE2I&s=10",フジテレビ
-https://fujitv4.mov3.co/hls/fujitv.m3u8
+http://cdns.kaitekitv.com:8000/zhongying/live/playlist.m3u8?cid=hdgd05&isp=5-15
 #EXTINF:-1 tvg-id="JOEXDTV.jp@SD" tvg-logo="https://i.imgur.com/YCqB5Kj.png",テレビ朝日
 https://tvasahi.mov3.co/hls/tvasahi.m3u8
 #EXTINF:-1 tvg-id="JORXDTV.jp@SD" tvg-logo="https://i.imgur.com/dUn2GRn.png",TBS
