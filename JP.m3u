@@ -149,7 +149,7 @@ https://naori-test.netgenx.site/pxx.php?shk_cid=cs24
 https://naori-test.netgenx.site/pxx.php?shk_cid=cs09
 #EXTINF:-1 group-title="CS" tvg-id="rch_73" tvg-name="手塚プロダクションTV" tvg-logo="https://jp-epg-26f0ce.gitlab.io/logos/rch_73.png",手塚プロダクションTV
 https://cdn-apne1.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-anime5-cmaf-rakutenjp/playlist.m3u8
-#EXTINF:-1 group-title="Kids" tvg-id="fastch_v2_kids" tvg-name="アニマックス FREE (FAST)" tvg-logo="https://jp-epg-26f0ce.gitlab.io/logos/fastch_v2_kids.png",アニマックス FREE (FAST)
+#EXTINF:-1 group-title="CS" tvg-id="fastch_v2_kids" tvg-name="アニマックス FREE (FAST)" tvg-logo="https://jp-epg-26f0ce.gitlab.io/logos/fastch_v2_kids.png",アニマックス FREE (FAST)
 https://livetv.fastv.jp/channel_assembly/69608FB2725E0FA3B972/master.m3u8
 
 # === KNTV ===
