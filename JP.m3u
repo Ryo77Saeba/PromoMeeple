@@ -12,12 +12,10 @@ https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd03
 https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd06
 #EXTINF:-1 group-title="Tokyo" tvg-id="jorxdtv.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe3-061-400x400.png",TBS
 https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd04
-<!-- https://tbs5.mov3.co/hls/tbs.m3u8 -->
 #EXTINF:-1 group-title="Tokyo" tvg-id="jotxdtv.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe6-071-400x400.png",TV Tokyo
 https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd07
 #EXTINF:-1 group-title="Tokyo" tvg-id="jocxdtv.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe4-081-400x400.png",Fuji TV
 https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd05
-<!-- https://fujitv4.mov3.co/hls/fujitv.m3u8 -->
 #EXTINF:-1 group-title="Tokyo" tvg-id="tokyomx1.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7e87-091-400x400.png",Tokyo MX1
 https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd08
 # === Tokyo MX2 ===
