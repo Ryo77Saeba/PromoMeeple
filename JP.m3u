@@ -15,14 +15,13 @@ https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd06
 https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd04
 #EXTINF:-1 group-title="Tokyo" tvg-id="jotxdtv.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe6-071-400x400.png",TV Tokyo
 https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd07
+
 #EXTINF:-1 group-title="Tokyo" tvg-id="jocxdtv.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe4-081-400x400.png",Fuji TV
 https://fujitv4.mov3.co/hls/fujitv.m3u8|Referer=https://mov3.co
 
 #EXTINF:-1 group-title="Tokyo" tvg-id="tokyomx1.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7e87-091-400x400.png",Tokyo MX1
 https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd08
 
-#EXTINF:-1 group-title="Tokyo" tvg-id="jocxdtv5.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe4-081-400x400.png",Fuji TV 2
-https://fujitv2.mov3.co/hls/fujitv.m3u8|Referer=https://mov3.co
 # === Tokyo MX2 ===
 
 #EXTINF:-1 group-title="BS" tvg-id="nhkbs.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/bsd/logo-0004-101-400x400.png",NHK BS
