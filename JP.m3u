@@ -17,7 +17,7 @@ https://tbs5.mov3.co/hls/tbs.m3u8|Referer=https://mov3.co
 https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd07
 
 #EXTINF:-1 group-title="Tokyo" tvg-id="jocxdtv.jp" tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/otd/logo-7fe4-081-400x400.png",Fuji TV
-http://cdns.kaitekitv.com:8000/zhongying/live/playlist.m3u8?cid=hdgd05&isp=5-15|Referer=http://www.kaitekitv.com
+http://cdns.kaitekitv.com:8000/zhongying/live/playlist.m3u8?cid=hdgd05&isp=5-15
 
 # === https://fujitv4.mov3.co/hls/fujitv.m3u8|Referer=https://mov3.co ===
 
